@@ -1,0 +1,360 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark" id="navbar">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="/">
+            <img src="assets/images/Wobb-Logo.png" alt="" class="logo-dark" height="40" />
+            <img src="assets/images/Wobb-Logo.png" alt="" class="logo-light" height="40" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
+                <li class="nav-item">
+                    <a href="javascript: void(0);" routerLink="/" (click)="selected()" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript: void(0);" routerLink="/" class="nav-link">Brand</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':true}">
+                    <a href="javascript: void(0);" class="nav-link">Influencer</a>
+                </li>
+                <!-- <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}">
+          <a href="javascript: void(0);" [ngxScrollTo]="'#features'" class="nav-link">Features</a>
+        </li> -->
+                <li class="nav-item">
+                    <a href="javascript: void(0);" routerLink="/" (click)="selected()" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript: void(0);" routerLink="/" (click)="selected()" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript: void(0);" routerLink="/" (click)="selected()" class="nav-link">Contact
+                        Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-center">
+                <li class="nav-item">
+                    <a href="javascript: void(0);" class="nav-link" (click)="loginModal(content)">Log
+                        in</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript: void(0);" class="nav-link"
+                        (click)="registerModal(registercontent)">Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="margin-top: 150px;">
+    <h1
+        style="font-size:70px;color: #502EFF;letter-spacing: 0;font: normal normal 800 80px 'Fira Sans Condensed', sans-serif;margin-bottom: 40px;">
+        Influencer</h1>
+    <div class="row">
+        <div class="col-lg-6">
+            <p class="font-weight-medium text-uppercase mb-2"><i
+                    class="mdi mdi-chart-bubble h2 text-primary mr-1 align-middle"></i> Interactive Features</p>
+            <!-- <h3 class="font-weight-semibold line-height-1_4 mb-4">Build <b>community</b> & <b>conversion</b> with our
+                suite of <b>social tool</b></h3> -->
+            <p class="desc font-size-15 mb-4">Temporibus autem quibusdam et aut officiis debitis aut rerum a
+                necessitatibus saepe eveniet ut et voluptates repudiandae sint molestiae non recusandae itaque.</p>
+            <p class="text-muted mb-2">
+                <i-feather class="icon-xs mr-1" name="layout"></i-feather> Donec pede justo fringilla vel
+                nec.
+            </p>
+            <p class="text-muted">
+                <i-feather class="icon-xs mr-1" name="life-buoy"></i-feather> Cras ultricies mi eu turpis
+                hendrerit fringilla.
+            </p>
+            <div class="row align-items-center" style="margin-top: 40px;">
+                <div class="col-xl-6 col-md-6 col-xs-12" style="padding-left: 0;margin-left: 0;padding-right: 0;">
+                    <button class="btn campaign">Endorse a campaign</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="mb-4 mb-lg-0">
+                <img src="assets/images/influencer-dp.png" alt="" class="img-fluid d-block mx-auto">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-10 offset-1" style="text-align: center;">
+            <div class="text-center mb-5">
+                <!-- <h3 class="title" style="margin-bottom: 5px;">Let us Know</h3> -->
+                <p class="categories-sub" style="margin-top: 0;">Hear what influencers have to say about Wobb</p>
+                <video id="my-video" class="video-js" controls preload="auto" width="930" height="400"
+                    poster="../../../assets/images/features-img-1.png" data-setup="{}">
+                    <source src="../../../assets/sample_video.mp4" type="video/mp4" />
+                    <!-- <source src="../../../assets/sample_video.mp4" type="video/webm" /> -->
+
+                </video>
+
+                <p style="margin-top: 40px;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem</p>
+                <button class="btn campaign" style="margin-top: 30px;">Endorse a campaign</button>
+            </div>
+            <!-- <div class="content-about">
+                {{about}}
+            </div> -->
+        </div>
+    </div>
+
+    <div style="margin-top: 80px;background-color: #502EFF;padding: 60px 10px 60px 10px;text-align: center;">
+        <!-- <div class="col-md-5 col-xs-12">
+            <img src="../../../assets/aboutus/misson.png" alt="mission" class="mission-img">
+        </div> -->
+
+        <h3 class="mission-title">How it works</h3>
+        <div class="row justify-content-center" style="margin-top: 40px">
+            <div class="col-4">
+                <div class="x">1</div>
+                <p class="mission-sub">Example Text</p>
+            </div>
+            <div class="col-4">
+                <div class="x">2</div>
+                <p class="mission-sub">Example Text</p>
+            </div>
+            <div class="col-4">
+                <div class="x">3</div>
+                <p class="mission-sub">Example Text</p>
+            </div>
+        </div>
+        <button class="btn campaign"
+            style="background-color: #FFFFFF;color: #502EFF;letter-spacing: 0.5px;margin-top: 40px;">CREATE
+            CAMPAIGN</button>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <img src="../../../assets/images/influencer-dp.png" alt="p1" class="img">
+            </div>
+            <div class="col-4">
+                <img src="../../../assets/images/influencer-dp.png" alt="p1" class="img">
+            </div>
+            <div class="col-4">
+                <img src="../../../assets/images/influencer-dp.png" alt="p1" class="img">
+            </div>
+        </div>
+        <button class="btn campaign"
+            style="background-color: #FFFFFF;color: #502EFF;letter-spacing: 0.5px;margin-top: 80px;">BROWSE OUR
+            INFLUENCERS</button>
+
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-3">
+                <div style="text-align: center;">
+                    <p class="info">2.3L</p>
+                    <p style="color: white;">Active Influencers</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <div style="text-align: center;">
+                    <p class="info">300+</p>
+                    <p style="color: white;">Companies using Wobb to create campaigns</p>
+                </div>
+            </div>
+            <div class="col-3" style="text-align: center;">
+                <div style="text-align: center;">
+                    <p class="info">88%</p>
+                    <p style="color: white;">Customer influence</p>
+                </div>
+            </div>
+            <div class="col-3" style="text-align: center;">
+                <div style="text-align: center;">
+                    <p class="info">100%</p>
+                    <p style="color: white;">Cash flow</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="row" style="margin-top: 50px;">
+        <div class="col-12" style="text-align: center;">
+            <div class="text-center mb-5">
+                <h3 class="title" style="margin-bottom: 5px;">Meet The Team</h3>
+                <div class="row">
+                    <div class="col-6 offset-3" style="text-align: center;">
+                        <p class="categories-sub" style="margin-top: 0;">Great outcome always relay on the great
+                            foundation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto" style="text-align: center;">
+                    <div style="background-color: #FFC5B8;margin: 10px;height: 200px;">
+                        <img src="../../../assets/images/team3.png" style="width: 300px;height: 226px;" alt="team3">
+                    </div>
+                    <h5 style="font-weight: 700;color:#502EFF;">jam potrick</h5>
+                    <p style="color: #BEBEBE;">CEO</p>
+                </div>
+                <div class="col-auto" style="text-align: center;">
+                    <div style="background-color: #FF5630;margin: 10px;">
+                        <img src="../../../assets/images/team2.png" style="width: 300px;" alt="team2">
+                    </div>
+                    <h5 style="font-weight: 700;color:#502EFF;">ema jonas</h5>
+                    <p style="color: #BEBEBE;">Product Manager</p>
+                </div>
+                <div class="col-auto" style="text-align: center;">
+                    <div style="background-color: #3E4863;margin: 10px;">
+                        <img src="../../../assets/images/team1.png" style="width: 300px;" alt="team1">
+                    </div>
+                    <h5 style="font-weight: 700;color:#502EFF;">mike pens</h5>
+                    <p style="color: #BEBEBE;">Chief Designer</p>
+                </div>
+                <div class="col-12">
+                    <button class="btn campaign" style="margin-top: 50px;">LET'S CATCH ALL</button>
+                </div>
+            </div>
+
+            <div class="row" style="background-color: #502EFF;margin-top: 60px;padding: 20px;">
+                <div class="col-3" style="text-align: center;">
+                    <h1 style="color: white;font-size: 50px;font-weight: 900;">88%</h1>
+                    <p style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry’s standard</p>
+                </div>
+                <div class="col-3" style="text-align: center;">
+                    <h1 style="color: white;font-size: 50px;font-weight: 900;">88%</h1>
+                    <p style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry’s standard</p>
+                </div>
+                <div class="col-3" style="text-align: center;">
+                    <h1 style="color: white;font-size: 50px;font-weight: 900;">88%</h1>
+                    <p style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry’s standard</p>
+                </div>
+                <div class="col-3" style="text-align: center;">
+                    <h1 style="color: white;font-size: 50px;font-weight: 900;">88%</h1>
+                    <p style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry’s standard</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+    <!-- <app-services></app-services> -->
+
+    <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-body">
+            <div class="text-center">
+                <h3 class="title mb-4">Welcome To Lezir</h3>
+                <h4 class="text-uppercase text-primary"><b>Login</b></h4>
+            </div>
+            <div class="login-form mt-4">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Username / Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="Youremail@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <a href="javascript: void(0);" class="float-right text-muted font-size-15">Forgot Password.?</a>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label font-size-15" for="customCheck1">Remember Me</label>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary">Login <i-feather class="icon-size-15 icon ml-1"
+                                name="arrow-right-circle"></i-feather></button>
+                    </div>
+                </form>
+                <div class="position-relative text-center mt-4">
+                    <span class="login-border"></span>
+                    <p class="social-login text-muted font-size-17">Social Login</p>
+                </div>
+                <div class="text-center">
+                    <ul class="list-inline mt-2 mb-3">
+                        <li class="list-inline-item mr-3"><a href="javascript: void(0);"
+                                class="login-social-icon icon-primary">
+                                <i-feather class="icon-xs" name="facebook"></i-feather>
+                            </a></li>
+                        <li class="list-inline-item mr-3"><a href="javascript: void(0);"
+                                class="login-social-icon icon-info">
+                                <i-feather class="icon-xs" name="twitter"></i-feather>
+                            </a></li>
+                        <li class="list-inline-item mr-3"><a href="javascript: void(0);"
+                                class="login-social-icon icon-danger">
+                                <i-feather class="icon-xs" name="instagram"></i-feather>
+                            </a></li>
+                        <li class="list-inline-item"><a href="javascript: void(0);"
+                                class="login-social-icon icon-success">
+                                <i-feather class="icon-xs" name="linkedin"></i-feather>
+                            </a></li>
+                    </ul>
+                    <p class="text-muted mb-0">New User? <a href="javascript: void(0);" class="text-primary">Signup</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+    <ng-template #registercontent let-c="close" let-d="dismiss">
+        <div class="modal-body">
+            <div class="text-center">
+                <h3 class="title mb-4">Welcome To Lezir</h3>
+                <h4 class="text-uppercase text-primary"><b>Register</b></h4>
+            </div>
+            <div class="login-form mt-4">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputUsername">User Name</label>
+                        <input type="text" class="form-control" id="exampleInputUsername" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail2">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2"
+                            placeholder="Youremail@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                    </div>
+                    <a href="javascript: void(0);" class="float-right text-muted font-size-15">Forgot Password.?</a>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label font-size-15" for="customCheck2">Remember Me</label>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary">Register <i-feather class="icon-size-15 icon ml-1"
+                                name="arrow-right-circle"></i-feather></button>
+                    </div>
+                </form>
+                <div class="position-relative text-center mt-4">
+                    <span class="login-border"></span>
+                    <p class="social-login text-muted font-size-17">Social Login</p>
+                </div>
+                <div class="text-center">
+                    <ul class="list-inline mt-2 mb-3">
+                        <li class="list-inline-item mr-3"><a href="javascript: void(0);"
+                                class="login-social-icon icon-primary">
+                                <i-feather class="icon-xs" name="facebook"></i-feather>
+                            </a></li>
+                        <li class="list-inline-item mr-3"><a href="javascript: void(0);"
+                                class="login-social-icon icon-info">
+                                <i-feather class="icon-xs" name="twitter"></i-feather>
+                            </a></li>
+                        <li class="list-inline-item mr-3"><a href="javascript: void(0);"
+                                class="login-social-icon icon-danger">
+                                <i-feather class="icon-xs" name="instagram"></i-feather>
+                            </a></li>
+                        <li class="list-inline-item"><a href="javascript: void(0);"
+                                class="login-social-icon icon-success">
+                                <i-feather class="icon-xs" name="linkedin"></i-feather>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </ng-template>

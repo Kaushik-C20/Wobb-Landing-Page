@@ -1,0 +1,32 @@
+.platform {
+  text-align: left;
+  font: normal normal normal 18px Poppins;
+  letter-spacing: 0.18px;
+  color: #707070;
+  opacity: 1;
+}
+.campaign {
+  background: #502eff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 10px #00000033;
+  text-align: center;
+  font: normal normal medium 21px/28px Roboto;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  opacity: 1;
+  border-radius: 30px;
+}
+.learn {
+  box-shadow: 0px 15px 30px #00000033;
+  border: 1px solid #979797;
+  border-radius: 60px;
+  text-align: center;
+  font: normal normal medium 21px/28px Roboto;
+  letter-spacing: 0.5px;
+  color: #626267;
+  opacity: 1;
+  // margin-top: 12px;
+}
+.video-btn{
+  margin-bottom: 20px;
+  color: #502eff;
+}

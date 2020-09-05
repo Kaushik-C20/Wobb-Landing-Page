@@ -1,0 +1,86 @@
+
+
+@media(min-width: 768px){
+    .categories-sub {
+        color: #502eff;
+        font-size: 30px;
+        letter-spacing:-2px;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 900;
+    } 
+    .title{
+        font-size: 20px;
+    }
+    .categories-btn{
+        display: flex;
+        align-items: center;
+        background-color: #502eff;
+        color: white;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 110px;
+        border-radius: 40px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        min-width: fit-content;
+        align-content: center;
+    }
+}
+@media(min-width: 968px){
+    .categories-sub{
+        color: #502eff;
+        font-size: 30px;
+        letter-spacing:-2px;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 900;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .categories-btn{
+        display: flex;
+        align-items: center;
+        background-color: #502eff;
+        color: white;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 110px;
+        border-radius: 40px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        min-width: fit-content;
+        align-content: center;
+    }
+}
+@media(min-width: 1200px){
+    .categories-sub {
+        color: #502eff;
+        font-size: 40px;
+        letter-spacing:-2px;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 900;
+    } 
+    .title{
+        font-size: 30px;
+    }
+    .categories-btn{
+        display: flex;
+        align-items: center;
+        background-color: #502eff;
+        color: white;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 110px;
+        border-radius: 40px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        min-width: fit-content;
+        align-content: center;
+    }
+}
